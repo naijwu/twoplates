@@ -74,6 +74,8 @@ export function parseFilteredData(initialValue: inputSchema, filters: string[], 
             delete value[deleteFields[i]]
         }
     }
+    
+    const filteredExercises = Object.keys(value);
 
     if (showOnlyPR) {
         // get array of dates of PRs
@@ -89,25 +91,25 @@ export function parseFilteredData(initialValue: inputSchema, filters: string[], 
             weight: -1,
         }]));
 
-        for (let i = 0; i < exercises.length; i++) {
-            const exercisedDates = Object.keys(value[exercises[i]]);
+        for (let i = 0; i < filteredExercises.length; i++) {
+            const exercisedDates = Object.keys(value[filteredExercises[i]]);
             exercisedDates.sort((a, b) => (new Date(b) as any) - (new Date(a) as any));
             
             for (let j = 0; j < exercisedDates.length; j++) {
                 const thisDate = exercisedDates[j]
                 let highestWeight = -1;
 
-                const sets = value[exercises[i]][exercisedDates[j]].sets
+                const sets = value[filteredExercises[i]][exercisedDates[j]].sets
                 for (let k = 0; k < sets.length; k++) {
                     if (sets[k][1] > highestWeight) {
                         highestWeight = sets[k][1]
                     }
                 }
 
-                if (highestWeight > PRDates[exercises[i]].weight) {
-                    PRDates[exercises[i]] = {
+                if (highestWeight > PRDates[filteredExercises[i]].weight) {
+                    PRDates[filteredExercises[i]] = {
                         date: thisDate,
-                        exercise: value[exercises[i]][exercisedDates[j]],
+                        exercise: value[filteredExercises[i]][exercisedDates[j]],
                         weight: highestWeight
                     }
                 }
