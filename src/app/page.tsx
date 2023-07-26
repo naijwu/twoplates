@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react'
-import { parseData, parseFilteredData } from '@/utilities/helpers';
+import { dateToString, parseData, parseFilteredData } from '@/utilities/helpers';
 import styles from './page.module.css'
 import { INPUT_EXAMPLE, parsedSchema } from '@/utilities/types';
 import { DATA } from '@/utilities/data';
@@ -56,7 +56,7 @@ export default function Home() {
       <div className={styles.left}>
         ●●
       </div>
-      {/* <div className={styles.options}>
+      <div className={styles.options}>
         <Toggle
           toggle={showOnlyPR ? '●' : '○'}
           label={'show only PR days'}
@@ -73,16 +73,16 @@ export default function Home() {
             </div>
           )}
           onClick={()=>setShowFilters(!showFilters)} />
-      </div> */}
+      </div>
       <div className={styles.stats}>
-        {data?.map((item) => (
+        {data?.map((item, index) => (
           <>
-            <div key={item.date} className={styles.date}>
-              {new Date(item.date).toDateString().substring(4)}
+            <div className={styles.date}>
+              {dateToString(item.date)}
             </div>
-            <div key={item.date} className={styles.exercises}>
+            <div className={styles.exercises}>
               {item.exercises?.map((exercise) => (
-                <div key={`${item.date}-${exercise}`} className={styles.exercise}>
+                <div key={`${index}`} className={styles.exercise}>
                   <div className={styles.label}>
                     {exercise.exercise}
                   </div>

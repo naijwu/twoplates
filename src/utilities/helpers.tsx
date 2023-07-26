@@ -1,5 +1,25 @@
 import { inputSchema, parsedSchema } from "./types";
 
+const MONTHS = [
+    '',
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]
+
+export function dateToString(s: string) {
+    return `${MONTHS[parseInt(s.substring(5, 7))]} ${s.substring(s.length - 2)}, ${s.substring(0, 4)}`
+}
+
 export function parseData(value: inputSchema): parsedSchema {
 
     const output: parsedSchema = []
@@ -71,6 +91,8 @@ export function parseFilteredData(initialValue: inputSchema, filters: string[], 
 
         for (let i = 0; i < exercises.length; i++) {
             const exercisedDates = Object.keys(value[exercises[i]]);
+            exercisedDates.sort((a, b) => (new Date(b) as any) - (new Date(a) as any));
+            
             for (let j = 0; j < exercisedDates.length; j++) {
                 const thisDate = exercisedDates[j]
                 let highestWeight = -1;
@@ -85,24 +107,18 @@ export function parseFilteredData(initialValue: inputSchema, filters: string[], 
                 if (highestWeight > PRDates[exercises[i]].weight) {
                     PRDates[exercises[i]] = {
                         date: thisDate,
-                        exercise: exercises[i],
+                        exercise: value[exercises[i]][exercisedDates[j]],
                         weight: highestWeight
                     }
                 }
             }
         }
 
-        const onlyIncludedDates: {
-            date: string,
-            exercise: string
-        }[] = []
-        Object.keys(PRDates).map((key) => onlyIncludedDates.push({
-            date: PRDates[key].date,
-            exercise: PRDates[key].exercise
-        }))
+        const parsedPRDates: any = Object.fromEntries(Object.keys(value).map(k => [k, {}]));
+        Object.keys(PRDates).map((key) => parsedPRDates[key][PRDates[key].date] = PRDates[key].exercise)
 
-        // TODO: filter
+        return parseData(parsedPRDates)
     }
-
+    
     return parseData(value);
 }
