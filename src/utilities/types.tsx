@@ -1,4 +1,4 @@
-type sets = number[][]; // 0 = reps, 1 = weight
+type sets = (number | string)[][]; // 0 = reps, 1 = weight
 
 // reason for different input/output: less effort when tracking by exercise
 export type inputSchema = {
