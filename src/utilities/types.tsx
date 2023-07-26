@@ -11,6 +11,7 @@ export type inputSchema = {
 }
 
 export type parsedSchema = {
+    _date?: Date | any;
     date: string;
     exercises: {
         exercise: string;

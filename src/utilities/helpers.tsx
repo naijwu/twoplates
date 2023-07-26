@@ -30,11 +30,12 @@ export function parseData(value: inputSchema): parsedSchema {
     for (let i = 0; i < allExercisedDates.length; i++) {
         output.push({
             date: allExercisedDates[i],
+            _date: new Date(allExercisedDates[i]),
             exercises: outputObj[allExercisedDates[i]]
         })
     }
 
-    return output
+    return output.sort((a, b) => b._date - a._date);
 }
 
 export function parseFilteredData(initialValue: inputSchema, filters: string[], showOnlyPR: boolean): parsedSchema {
