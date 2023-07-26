@@ -4,7 +4,7 @@
   padding-left: 20vw;
 }
 
-.left {
+.plates {
   position: fixed;
   top: var(--corner-padding);
   left: var(--corner-padding);
