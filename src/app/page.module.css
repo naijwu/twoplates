@@ -4,7 +4,7 @@
   padding-left: 20vw;
 }
 
-.left {
+.plates {
   position: fixed;
   top: var(--corner-padding);
   left: var(--corner-padding);
@@ -76,4 +76,29 @@
 
 .note {
   font-style: italic;
+}
+
+@media (max-width: 750px) {
+  
+  .container {
+    width: 100%;
+    padding: calc(var(--corner-padding) * 2) var(--corner-padding) calc(var(--corner-padding) * 2.5) var(--corner-padding);
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date {
+    text-align: left;
+  }
+
+  .inline {
+    flex-wrap: wrap;
+  }
+
+  .exercises {
+    padding-bottom: 2.5rem;
+  }
 }

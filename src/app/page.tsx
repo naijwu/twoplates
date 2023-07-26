@@ -53,9 +53,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.left}>
+      <a className={styles.plates} href="https://github.com/naijwu/twoplates">
         ●●
-      </div>
+      </a>
       <div className={styles.options}>
         <Toggle
           toggle={showOnlyPR ? '●' : '○'}
