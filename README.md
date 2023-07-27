@@ -9,6 +9,7 @@ Have somewhere to put your exercise numbers to easily share
 ### How it works
 1. Fork the repo
 2. Edit your own values in `src/utilities/data.tsx`
+   - Can reference `src/utilities/types.tsx` for data schema and example
 3. Deploy (easiest with Vercel)
 
 ### The idea:
