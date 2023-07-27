@@ -1,7 +1,37 @@
 import { inputSchema } from "./types";
 
 export const DATA: inputSchema = Object.freeze({
+    'Tricep pulldowns': {
+        '2023-07-27': {
+            note: 'Elbow started feeling funny, called rest of workout off',
+            sets: [
+                [15, 90],
+                [5, 90]
+            ]
+        }
+    },
+    'Overhead tricep extensions': {
+        '2023-07-27': {
+            note: '3m rests',
+            sets: [
+                [8, 120],
+                [15, 135],
+                [12, 135],
+                [14, 135]
+            ]
+        }
+    },
     'Bench': {
+        '2023-07-27': {
+            note: '3m rests, failed 205',
+            sets: [
+                [5, '135, paused'],
+                [6, 155],
+                [3, 185],
+                [5, '155, paused'],
+                [5, '155, paused'],
+            ]
+        },
         '2023-07-25': {
             note: '3m rests',
             sets: [

@@ -1,5 +1,5 @@
 .container {
-  width: 50vw;
+  width: 60vw;
   margin: 0 auto 0 0;
   padding-left: 20vw;
 }
@@ -49,13 +49,14 @@
 .stats {
   padding: var(--corner-padding) 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 1.5rem;
 }
 
 .date {
   font-weight: 700;
   text-align: right;
+  white-space: nowrap;
 }
 
 .exercises {
@@ -72,6 +73,7 @@
 
 .label {
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .note {
