@@ -7,7 +7,7 @@ A two hour project to get my fingers warmed up
 Have somewhere to put your exercise numbers to easily share
 
 ### How it works
-Fork the repo, edit your own values in `src/utilities/data.tsx`, and deploy
+Fork the repo, edit your own values in `src/utilities/data.tsx`, and deploy with Vercel
 
 ### The idea:
 
