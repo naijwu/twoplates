@@ -1,6 +1,27 @@
 import { inputSchema } from "./types";
 
 export const DATA: inputSchema = Object.freeze({
+    'Dumbbell side raises': {
+        '2023-07-29': {
+            note: '2m rests',
+            sets: [
+                [7, 35],
+                [8, 35],
+                [9, 35],
+                [3, '25, no rest']
+            ]
+        }
+    },
+    'Pull ups': {
+        '2023-07-29': {
+            note: '2m rests',
+            sets: [
+                [8, 'BW, close grip'],
+                [8, 'BW close grip'],
+                [6, 'BW, neutral wide grip']
+            ]
+        }
+    },
     'Tricep pulldowns': {
         '2023-07-27': {
             note: 'Elbow started feeling funny, called rest of workout off',
@@ -67,6 +88,17 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Barbell rows': {
+        '2023-07-29': {
+            note: '3m rests',
+            sets: [
+                [10, 135],
+                [8, 155],
+                [6, 185],
+                [10, 155],
+                [10, 165],
+                [11, '135, no rest'],
+            ]
+        },
         '2023-07-26': {
             note: '3m rests',
             sets: [
@@ -80,6 +112,17 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Lat pulldowns': {
+        '2023-07-29': {
+            note: '3m rests',
+            sets: [
+                [9, 115],
+                [8, 130],
+                [5, 145],
+                [3, 160],
+                [3, '130, no rest'],
+                [3, '100, no rest']
+            ]
+        },
         '2023-07-26': {
             note: '3m rests',
             sets: [
