@@ -7,8 +7,8 @@ export const DATA: inputSchema = Object.freeze({
             sets: [
                 [7, 35],
                 [8, 35],
-                [9, '35, supserset'],
-                [3, '25, supserset']
+                [9, '35 (supserset)'],
+                [3, '25 (supserset)']
             ]
         }
     },
@@ -95,8 +95,8 @@ export const DATA: inputSchema = Object.freeze({
                 [8, 155],
                 [6, 185],
                 [10, 155],
-                [10, '165, supserset'],
-                [11, '135, supserset'],
+                [10, '165 (supserset)'],
+                [11, '135 (supserset)'],
             ]
         },
         '2023-07-26': {
@@ -118,9 +118,9 @@ export const DATA: inputSchema = Object.freeze({
                 [9, 115],
                 [8, 130],
                 [5, 145],
-                [3, '160, supserset'],
-                [3, '130, supserset'],
-                [3, '100, supserset']
+                [3, '160 (supserset)'],
+                [3, '130 (supserset)'],
+                [3, '100 (supserset)']
             ]
         },
         '2023-07-26': {
