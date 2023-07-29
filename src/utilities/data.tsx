@@ -17,7 +17,7 @@ export const DATA: inputSchema = Object.freeze({
             note: '2m rests',
             sets: [
                 [8, 'BW, close grip'],
-                [8, 'BW close grip'],
+                [8, 'BW, close grip'],
                 [6, 'BW, neutral wide grip']
             ]
         }
