@@ -121,7 +121,7 @@ export function parseFilteredData(initialValue: inputSchema, filters: string[], 
                     const weightToCompare = typeof sets[k][1] == 'number' 
                         ? sets[k][1] 
                         : deduceNumber(sets[k][1])
-                    if (weightToCompare > highestWeight) {
+                    if ((weightToCompare > highestWeight) && sets[k][0] > 0) {
                         highestWeight = weightToCompare
                     }
                 }

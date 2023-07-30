@@ -2,6 +2,15 @@ import { inputSchema } from "./types";
 
 export const DATA: inputSchema = Object.freeze({
     'Dumbbell side raises': {
+        '2023-07-30': {
+            note: 'single superset, just wanted the pump lol',
+            sets: [
+                [8, 40],
+                [6, 35],
+                [9, 30],
+                [10, 25]
+            ]
+        },
         '2023-07-29': {
             note: '2m rests',
             sets: [
@@ -32,6 +41,15 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Overhead tricep extensions': {
+        '2023-07-30': {
+            note: '2m rests',
+            sets: [
+                [12, 135],
+                [15, 135],
+                [15, 135],
+                [14, 135]
+            ]
+        },
         '2023-07-27': {
             note: '3m rests',
             sets: [
@@ -43,12 +61,29 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Bench': {
+        '2023-07-30': {
+            note: '3~4m rests',
+            sets: [
+                [6, 135],
+                [5, 155],
+                [3, 185],
+                [2, 195],
+                [1, 205],
+                [0, 215],
+                [1, 185],
+                [7, '155, paused'],
+                [6, '155, paused'],
+                [3, '170, paused (supserset)'],
+                [5, '135, paused (supserset)'],
+            ]
+        },
         '2023-07-27': {
-            note: '3m rests, failed 205',
+            note: '3m rests',
             sets: [
                 [5, '135, paused'],
                 [6, 155],
                 [3, 185],
+                [0, 205],
                 [5, '155, paused'],
                 [5, '155, paused'],
             ]
