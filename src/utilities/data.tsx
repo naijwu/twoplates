@@ -41,16 +41,6 @@ export const DATA: inputSchema = Object.freeze({
             ]
         }
     },
-    'Pull ups': {
-        '2023-07-29': {
-            note: '2m rests',
-            sets: [
-                [8, 'BW, close grip'],
-                [8, 'BW, close grip'],
-                [6, 'BW, neutral wide grip']
-            ]
-        }
-    },
     'Tricep pulldowns': {
         '2023-07-27': {
             note: 'Elbow started feeling funny, called rest of workout off',
@@ -142,6 +132,30 @@ export const DATA: inputSchema = Object.freeze({
             ]
         }
     },
+    'Lat pulldowns': {
+        '2023-07-29': {
+            note: '3m rests',
+            sets: [
+                [9, 115],
+                [8, 130],
+                [5, 145],
+                [3, '160 (supserset)'],
+                [3, '130 (supserset)'],
+                [3, '100 (supserset)']
+            ]
+        },
+        '2023-07-26': {
+            note: '3m rests',
+            sets: [
+                [8, 115],
+                [8, 130],
+                [5, 145],
+                [5, 145],
+                [8, 130],
+                [8, 115],
+            ]
+        }
+    },
     'Barbell rows': {
         '2023-07-29': {
             note: '3m rests',
@@ -166,27 +180,13 @@ export const DATA: inputSchema = Object.freeze({
             ]
         }
     },
-    'Lat pulldowns': {
+    'Pull ups': {
         '2023-07-29': {
-            note: '3m rests',
+            note: '2m rests',
             sets: [
-                [9, 115],
-                [8, 130],
-                [5, 145],
-                [3, '160 (supserset)'],
-                [3, '130 (supserset)'],
-                [3, '100 (supserset)']
-            ]
-        },
-        '2023-07-26': {
-            note: '3m rests',
-            sets: [
-                [8, 115],
-                [8, 130],
-                [5, 145],
-                [5, 145],
-                [8, 130],
-                [8, 115],
+                [8, 'BW, close grip'],
+                [8, 'BW, close grip'],
+                [6, 'BW, neutral wide grip']
             ]
         }
     }
