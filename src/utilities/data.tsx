@@ -1,6 +1,26 @@
 import { inputSchema } from "./types";
 
 export const DATA: inputSchema = Object.freeze({
+    'Dumbbell weighted lunges': {
+        '2023-07-31': {
+            note: '1m rests',
+            sets: [
+                [7, 50],
+                [6, 50],
+                [6, 50]
+            ]
+        }
+    },
+    'Calf raises': {
+        '2023-07-31': {
+            note: '2m rests, using leg press machine',
+            sets: [
+                [10, 180],
+                [10, 210],
+                [12, 210]
+            ]
+        }
+    },
     'Dumbbell side raises': {
         '2023-07-30': {
             note: 'single superset, just wanted the pump lol',
