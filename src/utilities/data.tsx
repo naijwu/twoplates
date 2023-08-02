@@ -93,8 +93,8 @@ export const DATA: inputSchema = Object.freeze({
                 [1, 185],
                 [7, '155, paused'],
                 [6, '155, paused'],
-                [3, '170, paused (supserset)'],
-                [5, '135, paused (supserset)'],
+                [3, '170, paused (superset)'],
+                [5, '135, paused (superset)'],
             ]
         },
         '2023-07-27': {
@@ -158,9 +158,9 @@ export const DATA: inputSchema = Object.freeze({
                 [9, 115],
                 [8, 130],
                 [5, 145],
-                [3, '160 (supserset)'],
-                [3, '130 (supserset)'],
-                [3, '100 (supserset)']
+                [3, '160 (superset)'],
+                [3, '130 (superset)'],
+                [3, '100 (superset)']
             ]
         },
         '2023-07-26': {
@@ -183,8 +183,8 @@ export const DATA: inputSchema = Object.freeze({
                 [10, 155],
                 [6, 185],
                 [10, 165],
-                [10, '165 (supserset)'],
-                [10, '135 (supserset)'],
+                [10, '165 (superset)'],
+                [10, '135 (superset)'],
             ]
         },
         '2023-07-29': {
@@ -194,8 +194,8 @@ export const DATA: inputSchema = Object.freeze({
                 [8, 155],
                 [6, 185],
                 [10, 155],
-                [10, '165 (supserset)'],
-                [11, '135 (supserset)'],
+                [10, '165 (superset)'],
+                [11, '135 (superset)'],
             ]
         },
         '2023-07-26': {
