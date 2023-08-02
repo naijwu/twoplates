@@ -46,8 +46,8 @@ export const DATA: inputSchema = Object.freeze({
             sets: [
                 [7, 35],
                 [8, 35],
-                [9, '35 (supserset)'],
-                [3, '25 (supserset)']
+                [9, '35 (superset)'],
+                [3, '25 (superset)']
             ]
         }
     },
