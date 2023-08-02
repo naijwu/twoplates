@@ -7,7 +7,7 @@ export const DATA: inputSchema = Object.freeze({
             sets: [
                 [10, 100],
                 [10, 100],
-                [8, 60]
+                [8, 120]
             ]
         }
     },
