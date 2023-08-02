@@ -2,7 +2,7 @@ import { inputSchema } from "./types";
 
 export const DATA: inputSchema = Object.freeze({
     'Rear delt fly machine': {
-        '2023-08-01': {
+        '2023-08-02': {
             note: '1m rests; TL',
             sets: [
                 [10, 100],
