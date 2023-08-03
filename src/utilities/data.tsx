@@ -1,6 +1,27 @@
 import { inputSchema } from "./types";
 
 export const DATA: inputSchema = Object.freeze({
+    'Single arm cable bicep curls': {
+        '2023-08-02': {
+            note: '3m rests',
+            sets: [
+                [8, '40 (x2)'],
+                [10, '50 (x2)'],
+                [10, '60 (x2)'],
+                [8, '50 (x2)']
+            ]
+        }
+    },
+    'Cable rows': {
+        '2023-08-02': {
+            note: '3m rests',
+            sets: [
+                [10, 130],
+                [12, 145],
+                [11, 160]
+            ]
+        }
+    },
     'Rear delt fly machine': {
         '2023-08-02': {
             note: '1m rests; TL',
@@ -32,6 +53,15 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Dumbbell side raises': {
+        '2023-08-03': {
+            note: '3m rests',
+            sets: [
+                [12, 35],
+                [12, 35],
+                [12, 35],
+                [12, 35]
+            ]
+        },
         '2023-07-30': {
             note: 'single superset, just wanted the pump lol',
             sets: [
@@ -61,6 +91,15 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Overhead tricep extensions': {
+        '2023-08-03': {
+            note: '3m rests',
+            sets: [
+                [15, 135],
+                [15, 135],
+                [16, 135],
+                [17, 135]
+            ]
+        },
         '2023-07-30': {
             note: '2m rests',
             sets: [
@@ -81,6 +120,19 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Bench': {
+        '2023-08-03': {
+            note: '3~4m rests',
+            sets: [
+                [5, 135],
+                [6, 155],
+                [3, 185],
+                [1, 205],
+                [1, 210],
+                [2, 195],
+                [8, '155, paused'],
+                [5, '165, paused']
+            ]
+        },
         '2023-07-30': {
             note: '3~4m rests',
             sets: [
