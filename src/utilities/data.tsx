@@ -133,6 +133,15 @@ export const DATA: inputSchema = Object.freeze({
                 [5, '165, paused']
             ]
         },
+        '2023-07-31': {
+            note: '3m rests; UBC ARC',
+            sets: [
+                [6, '135, paused'],
+                [6, '155, paused'],
+                [3, '185, paused'],
+                [6, '155, paused']
+            ]
+        },
         '2023-07-30': {
             note: '3~4m rests',
             sets: [
