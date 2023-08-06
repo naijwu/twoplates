@@ -2,6 +2,16 @@ import { inputSchema } from "./types";
 
 export const DATA: inputSchema = Object.freeze({
     'Single arm cable bicep curls': {
+        '2023-08-05': {
+            note: '3m rests',
+            sets: [
+                [10, '40 (x2)'],
+                [10, '50 (x2)'],
+                [10, '60 (x2)'],
+                [11, '50 (x2)'],
+                [12, '50 (x2)']
+            ]
+        },
         '2023-08-02': {
             note: '3m rests',
             sets: [
@@ -194,6 +204,13 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Squat': {
+        '2023-08-04': {
+            note: 'no words',
+            sets: [
+                [7, 135],
+                [0, 205]
+            ]
+        },
         '2023-07-26': {
             note: '3m rests',
             sets: [
@@ -204,6 +221,17 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Lat pulldowns': {
+        '2023-08-05': {
+            note: '3m rests',
+            sets: [
+                [9, 115],
+                [8, 130],
+                [6, 160],
+                [4, 175],
+                [6, 160],
+                [6, 145]
+            ]
+        },
         '2023-08-02': {
             note: '3m rests; TL',
             sets: [
@@ -237,6 +265,17 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Barbell rows': {
+        '2023-08-05': {
+            note: '3m rests',
+            sets: [
+                [10, 135],
+                [11, 155],
+                [10, 165],
+                [6, 185],
+                [10, '165 (superset)'],
+                [10, '135 (superset)'],
+            ]
+        },
         '2023-08-02': {
             note: '3m rests; TL',
             sets: [
