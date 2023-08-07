@@ -58,7 +58,8 @@ export default function Home() {
       </a>
       <div className={styles.options}>
         <div className={styles.current}>
-          Height: 180cm<br />Weight: 79±1.5kg
+          Height: 180cm<br />
+          Weight: 79±1.5kg / 174±4lbs
         </div>
         <Toggle
           toggle={showOnlyPR ? '●' : '○'}
