@@ -1,4 +1,21 @@
-import { inputSchema } from "./types";
+import { inputSchema, macrosSchema } from "./types";
+
+export const MACROS: macrosSchema = Object.freeze({
+    '2023-07-24': `~195g / ~1000 kcal`,
+    '2023-07-25': `~210g / ~1500 kcal`,
+    '2023-07-26': `~195g / ~1000 kcal`,
+    '2023-07-27': `~215g / ~1800 kcal`,
+    '2023-07-28': `~120g / ~600 kcal`,
+    '2023-07-29': `~195g / ~1000 kcal`,
+    '2023-07-30': `~195g / ~1000 kcal`,
+    '2023-07-31': `~195g / ~1000 kcal`,
+    '2023-08-01': `~195g / ~1000 kcal`,
+    '2023-08-02': `~195g / ~1000 kcal`,
+    '2023-08-03': `~195g / ~1000 kcal`,
+    '2023-08-04': `~120g / ~600 kcal`,
+    '2023-08-05': `~195g / ~1000 kcal`,
+    '2023-08-06': `~150g / ~1500 kcal`,
+})
 
 export const DATA: inputSchema = Object.freeze({
     'Single arm cable bicep curls': {

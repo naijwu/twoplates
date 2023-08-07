@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 import { dateToString, parseData, parseFilteredData } from '@/utilities/helpers';
 import styles from './page.module.css'
 import { INPUT_EXAMPLE, parsedSchema } from '@/utilities/types';
-import { DATA } from '@/utilities/data';
+import { DATA, MACROS } from '@/utilities/data';
 
 const Toggle = ({
   toggle,
@@ -57,6 +57,9 @@ export default function Home() {
         ●●
       </a>
       <div className={styles.options}>
+        <div className={styles.current}>
+          Height: 180cm<br />Weight: 79±1.5kg
+        </div>
         <Toggle
           toggle={showOnlyPR ? '●' : '○'}
           label={'show only PR days'}
@@ -75,10 +78,33 @@ export default function Home() {
           onClick={()=>setShowFilters(!showFilters)} />
       </div>
       <div className={styles.stats}>
+        <div className={`${styles.legend} ${styles.meta}`}>
+          <div className={styles.date}>
+            Date
+          </div>
+          <div>daily total</div>
+          <div style={{ fontStyle: 'italic' }}>
+            protein / cal
+          </div>
+        </div>
+        <div className={`${styles.legend} ${styles.exercises}`}>
+            <div className={styles.exercise}>
+              <div className={styles.label}>
+                Exercise
+              </div>
+              <div className={styles.note}>
+                Note
+              </div>
+              Sets
+            </div>
+        </div>
         {data?.map((item, index) => (
           <>
-            <div className={styles.date}>
-              {dateToString(item.date)}
+            <div className={styles.meta}>
+              <div className={styles.date}>
+                {dateToString(item.date)}
+              </div>
+              {MACROS[item.date]}
             </div>
             <div className={styles.exercises}>
               {item.exercises?.map((exercise) => (

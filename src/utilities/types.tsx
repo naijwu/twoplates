@@ -20,6 +20,10 @@ export type parsedSchema = {
     }[];
 }[];
 
+export type macrosSchema = {
+    [key: string]: string
+}
+
 // Date: YYYY-MM-DD
 export const INPUT_EXAMPLE: inputSchema = {
     'Bench press': {
