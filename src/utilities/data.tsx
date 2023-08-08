@@ -15,10 +15,30 @@ export const MACROS: macrosSchema = Object.freeze({
     '2023-08-04': `~120g / ~600 kcal`,
     '2023-08-05': `~195g / ~1000 kcal`,
     '2023-08-06': `~150g / ~1500 kcal`,
+    '2023-08-07': `~180g / ~1800 kcal`,
 })
 
 export const DATA: inputSchema = Object.freeze({
+    'Leg raises': {
+        '2023-08-08': {
+            note: '',
+            sets: [
+                [15, 'BW'],
+                [10, 'BW'],
+                [17, 'BW']
+            ]
+        }
+    },
     'Single arm cable bicep curls': {
+        '2023-08-08': {
+            note: '3m rests',
+            sets: [
+                [10, '40 (x2)'],
+                [11, '50 (x2)'],
+                [11, '60 (x2)'],
+                [15, '50 (x2)'],
+            ]
+        },
         '2023-08-05': {
             note: '3m rests',
             sets: [
@@ -314,6 +334,17 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Barbell rows': {
+        '2023-08-08': {
+            note: '3m rests',
+            sets: [
+                [12, 155],
+                [10, 170],
+                [6, 185],
+                [3, 205],
+                [8, 170],
+                [12, 155],
+            ]
+        },
         '2023-08-05': {
             note: '3m rests',
             sets: [
@@ -360,12 +391,21 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Pull ups': {
+        '2023-08-08': {
+            note: '2~3m rests',
+            sets: [
+                [6, 'BW, neutral'],
+                [8, 'BW, neutral'],
+                [7, 'BW, neutral'],
+                [6, 'BW, neutral wide']
+            ]
+        },
         '2023-07-29': {
             note: '2m rests',
             sets: [
-                [8, 'BW, close grip'],
-                [8, 'BW, close grip'],
-                [6, 'BW, neutral wide grip']
+                [8, 'BW, close'],
+                [8, 'BW, close'],
+                [6, 'BW, neutral wide']
             ]
         }
     }
