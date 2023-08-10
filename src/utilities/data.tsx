@@ -16,6 +16,8 @@ export const MACROS: macrosSchema = Object.freeze({
     '2023-08-05': `~195g / ~1000 kcal`,
     '2023-08-06': `~150g / ~1500 kcal`,
     '2023-08-07': `~180g / ~1800 kcal`,
+    '2023-08-08': `~195g / ~1000 kcal`,
+    '2023-08-09': `~180g / ~2000 kcal`,
 })
 
 export const DATA: inputSchema = Object.freeze({
@@ -147,6 +149,14 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Overhead tricep extensions': {
+        '2023-08-10': {
+            note: '2m rests',
+            sets: [
+                [12, 165],
+                [14, 165],
+                [13, 165],
+            ]
+        },
         '2023-08-07': {
             note: '3m rests',
             sets: [
@@ -185,6 +195,20 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Bench': {
+        '2023-08-10': {
+            note: '3~4m rests',
+            sets: [
+                [6, '135, paused'],
+                [6, 155],
+                [2, 185],
+                [1, 205],
+                [1, 220],
+                [1, 225],
+                [1, 225],
+                [3, '185, paused'],
+                [9, '155, paused'],
+            ]
+        },
         '2023-08-07': {
             note: '3~4m rests',
             sets: [
