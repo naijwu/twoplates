@@ -106,8 +106,12 @@
     flex-direction: column;
   }
 
-  .date {
+  .legend {
     text-align: left;
+  }
+
+  .meta {
+    align-items: flex-start;
   }
 
   .inline {
@@ -116,5 +120,9 @@
 
   .exercises {
     padding-bottom: 2.5rem;
+  }
+
+  .current {
+    display: none;
   }
 }
