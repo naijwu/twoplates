@@ -338,8 +338,9 @@ export const DATA: inputSchema = Object.freeze({
     },
     'Squat': {
         '2023-08-11': {
-            note: 'no words',
+            note: '2m rests',
             sets: [
+                [1, 155],
                 [2, 175]
             ]
         },
