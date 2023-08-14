@@ -36,6 +36,16 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Single arm cable bicep curls': {
+        '2023-08-14': {
+            note: '3m rests',
+            sets: [
+                [10, '40 (x2)'],
+                [10, '50 (x2)'],
+                [11, '60 (x2)'],
+                [12, '60 (x2)'],
+                [15, '50 (x2)'],
+            ]
+        },
         '2023-08-08': {
             note: '3m rests',
             sets: [
@@ -113,6 +123,15 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Dumbbell side raises': {
+        '2023-08-14': {
+            note: '3m rests',
+            sets: [
+                [12, 35],
+                [12, 35],
+                [13, 35],
+                [14, 35]
+            ]
+        },
         '2023-08-11': {
             note: '3m rests',
             sets: [
@@ -168,6 +187,13 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Overhead tricep extensions': {
+        '2023-08-14': {
+            note: '2m rests',
+            sets: [
+                [15, 165],
+                [15, 165]
+            ]
+        },
         '2023-08-10': {
             note: '2m rests',
             sets: [
