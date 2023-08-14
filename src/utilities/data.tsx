@@ -466,8 +466,8 @@ export const DATA: inputSchema = Object.freeze({
             note: '2m rests',
             sets: [
                 [6, 'BW, neutral'],
-                [6, 'BW, neutral'],
-                [4, 'BW, neutral']
+                [6, 'BW, neutral wide'],
+                [4, 'BW, regular']
             ]
         },
         '2023-08-08': {
