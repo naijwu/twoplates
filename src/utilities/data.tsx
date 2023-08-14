@@ -18,6 +18,10 @@ export const MACROS: macrosSchema = Object.freeze({
     '2023-08-07': `~180g / ~1800 kcal`,
     '2023-08-08': `~195g / ~1000 kcal`,
     '2023-08-09': `~180g / ~2000 kcal`,
+    '2023-08-10': `~195g / ~1800 kcal`,
+    '2023-08-11': `~195g / ~1800 kcal`,
+    '2023-08-12': `~120g / ~1800 kcal`,
+    '2023-08-13': `~100g / ~1800 kcal`,
 })
 
 export const DATA: inputSchema = Object.freeze({
@@ -62,6 +66,13 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Cable rows': {
+        '2023-08-11': {
+            note: '3m rests',
+            sets: [
+                [10, 175],
+                [10, 175]
+            ]
+        },
         '2023-08-02': {
             note: '3m rests',
             sets: [
@@ -102,6 +113,14 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Dumbbell side raises': {
+        '2023-08-11': {
+            note: '3m rests',
+            sets: [
+                [10, 35],
+                [12, 35],
+                [11, 35]
+            ]
+        },
         '2023-08-07': {
             note: '3m rests',
             sets: [
@@ -195,6 +214,27 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Bench': {
+        '2023-08-13': {
+            note: '3~4m rests, felt nauseous so called it a day',
+            sets: [
+                [6, 155],
+                [3, 185],
+                [1, 205],
+                [1, 225],
+                [1, 225]
+            ]
+        },
+        '2023-08-11': {
+            note: '3m rests',
+            sets: [
+                [9, '155, paused'],
+                [3, '185, paused'],
+                [2, 205],
+                [1, '205, paused'],
+                [3, '185, paused'],
+                [9, '155, paused']
+            ]
+        },
         '2023-08-10': {
             note: '3~4m rests',
             sets: [
@@ -297,6 +337,12 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Squat': {
+        '2023-08-11': {
+            note: 'no words',
+            sets: [
+                [2, 175]
+            ]
+        },
         '2023-08-04': {
             note: 'no words',
             sets: [
@@ -377,7 +423,7 @@ export const DATA: inputSchema = Object.freeze({
                 [10, 165],
                 [6, 185],
                 [10, '165 (superset)'],
-                [10, '135 (superset)'],
+                [10, '135 (superset)']
             ]
         },
         '2023-08-02': {
@@ -388,7 +434,7 @@ export const DATA: inputSchema = Object.freeze({
                 [6, 185],
                 [10, 165],
                 [10, '165 (superset)'],
-                [10, '135 (superset)'],
+                [10, '135 (superset)']
             ]
         },
         '2023-07-29': {
@@ -399,7 +445,7 @@ export const DATA: inputSchema = Object.freeze({
                 [6, 185],
                 [10, 155],
                 [10, '165 (superset)'],
-                [11, '135 (superset)'],
+                [11, '135 (superset)']
             ]
         },
         '2023-07-26': {
@@ -410,11 +456,19 @@ export const DATA: inputSchema = Object.freeze({
                 [5, 185],
                 [1, 205],
                 [5, 155],
-                [12, 135],
+                [12, 135]
             ]
         }
     },
     'Pull ups': {
+        '2023-08-11': {
+            note: '2m rests',
+            sets: [
+                [6, 'BW, neutral'],
+                [6, 'BW, neutral'],
+                [4, 'BW, neutral']
+            ]
+        },
         '2023-08-08': {
             note: '2~3m rests',
             sets: [
