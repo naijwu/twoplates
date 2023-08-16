@@ -22,6 +22,8 @@ export const MACROS: macrosSchema = Object.freeze({
     '2023-08-11': `~195g / ~1800 kcal`,
     '2023-08-12': `~120g / ~1800 kcal`,
     '2023-08-13': `~100g / ~1800 kcal`,
+    '2023-08-14': `~195g / ~1500 kcal`,
+    '2023-08-15': `~180g / ~2000 kcal`,
 })
 
 export const DATA: inputSchema = Object.freeze({
@@ -240,6 +242,18 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Bench': {
+        '2023-08-15': {
+            note: '3~4m rests, felt nauseous so called it a day',
+            sets: [
+                [6, 155],
+                [3, 185],
+                [1, 205],
+                [0, 235],
+                [1, 230],
+                [5, 185],
+                [12, 155],
+            ]
+        },
         '2023-08-13': {
             note: '3~4m rests, felt nauseous so called it a day',
             sets: [
