@@ -428,6 +428,15 @@ export const DATA: inputSchema = Object.freeze({
         }
     },
     'Bench': {
+        '2024-02-01': {
+            note: '',
+            sets: [
+                [8, 155],
+                [5, 185],
+                [1, 225],
+                [1, 235],
+            ]
+        },
         '2023-10-21': {
             note: '',
             sets: [
