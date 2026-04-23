@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useMemo } from 'react'
-import { dateToString, parseData, parseFilteredData } from '@/utilities/helpers';
+import { dateToString, parseData, parseFilteredData } from '@/lib/utils';
 import styles from './page.module.css'
-import { INPUT_EXAMPLE, parsedSchema } from '@/utilities/types';
-import { DATA, MACROS } from '@/utilities/data';
+import { INPUT_EXAMPLE, parsedSchema } from '@/lib/types';
+import { DATA, MACROS } from '@/lib/data';
 
 const Toggle = ({
   toggle,
@@ -54,12 +54,12 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <a className={styles.plates} href="https://github.com/naijwu/twoplates">
-        ●●
+        ●●●
       </a>
       <div className={styles.options}>
         <div className={styles.current}>
-          Height: 180cm<br />
-          Weight: 79±2kg / 174±5lbs
+          Height: 181cm<br />
+          Weight: 85±1kg / 187±2lbs
         </div>
         <Toggle
           toggle={showOnlyPR ? '●' : '○'}

@@ -1,12 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { IBM_Plex_Mono } from 'next/font/google'
-
-const defaultFont = IBM_Plex_Mono({ weight: ['400', '600', '700'], style: ['normal', 'italic'], subsets: ['cyrillic'] })
 
 export const metadata: Metadata = {
-  title: 'twoplates',
-  description: 'stats tracker',
+  title: 'threeplates',
+  description: 'gym stats',
 }
 
 export default function RootLayout({
@@ -16,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={defaultFont.className}>{children}</body>
+      <body className="font-mono">{children}</body>
     </html>
   )
 }
